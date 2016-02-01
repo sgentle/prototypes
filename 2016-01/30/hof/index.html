@@ -1,0 +1,103 @@
+<!doctype html>
+<head>
+  <title>Hof</title>
+  <style>
+  body {
+    margin: 0;
+  }
+  hof-of,hof-open-full {
+    display: inline;
+    border-bottom: 1px dotted;
+    cursor: pointer;
+  }
+  hof-on {
+    display: inline;
+  }
+  hof-over {
+    display: block;
+  }
+  body > div {
+    margin-bottom: 1em;
+  }
+  body > div > div, hof-over {
+    margin-left: 1em;
+  }
+  </style>
+  <style id="hider">
+    hof-of,hof-over { visibility:hidden }
+  </style>
+</head>
+<body>
+  <div>
+    Oneshot:
+    <div><hof-of field="GNU">GNU's Not Unix</hof-of></div>
+  </div>
+
+  <div>
+    Recursive:
+    <hof-over>
+      <div><hof-of field="GNU"><hof-on>GNU</hof-on>'s Not Unix</hof-of></div>
+    </hof-over>
+  </div>
+
+  <div>
+    Factory:
+    <hof-over>
+      <li><hof-of field="ZWEI"><hof-on>ZWEI</hof-on> Was <hof-of field="EINE"><hof-on>EINE</hof-on> Is Not Emacs</hof-of> Initially</hof-of></li>
+    </hof-over>
+  </div>
+
+
+  <div>
+    Factory:
+    <hof-over factory>
+      <li><hof-of field="ZWEI"><hof-on>ZWEI</hof-on> Was <hof-of field="EINE"><hof-on>EINE</hof-on> Is Not Emacs</hof-of> Initially</hof-of></li>
+    </hof-over>
+  </div>
+
+  <div>
+    Output:
+    <hof-over factory>
+      <li>
+        <hof-of field="ZWEI"><hof-on>ZWEI</hof-on> Was <hof-of field="EINE"><hof-on>EINE</hof-on> Is Not <hof-on>Emacs</hof-on></hof-of> Initially</hof-of>
+        (Emacs:<hof-output function="Emacs"></hof-output>)
+      </li>
+    </hof-over>
+  </div>
+
+  <div>
+    Triangular Emacs:
+    <hof-over factory>
+      <li>
+        <hof-of field="Z"><hof-on>Z</hof-on><hof-of field="E"><hof-on>E</hof-on><hof-on>e</hof-on></hof-of></hof-of>
+        (Z<hof-output function="Z"></hof-output>, E<hof-output function="E"></hof-output>, e<hof-output function="e"></hof-output>)
+        <hof-open-full>expand</hof-open-full>
+      </li>
+    </hof-over>
+  </div>
+
+  <div>
+    Fibonacci's Infinite Sequence:
+    <hof-over factory>
+      <li>
+        Fibonacci's <hof-of field="I">Infinite <hof-on>S</hof-on> of</hof-of> <hof-of field="S">Sequence of <hof-on>I</hof-on> <hof-on>S</hof-on></hof-of>
+        (I<hof-output function="I"></hof-output>, S<hof-output function="S"></hof-output>)
+      </li>
+    </hof-over>
+  </div>
+
+  <div>
+    FIS:
+    <hof-over factory>
+      <li>
+        F<hof-of field="I"><hof-on>S</hof-on></hof-of><hof-of field="S"><hof-on>I</hof-on><hof-on>S</hof-on></hof-of>
+        (I<hof-output function="I"></hof-output>, S<hof-output function="S"></hof-output> ϕ<hof-output function="(S/I).toFixed(3)"></hof-output>)
+        <hof-open-full>expand</hof-open-full>
+      </li>
+    </hof-over>
+  </div>
+
+
+  <script src="hof.js"></script>
+  <script>document.getElementById('hider').remove()</script>
+</body>
