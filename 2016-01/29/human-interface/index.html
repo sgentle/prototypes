@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+  <title>Human Interface</title>
+  <style>
+  body {
+    margin: 0;
+  }
+  .element {
+    width: 48px;
+    height: 48px;
+    border: 1px solid black;
+    font-size: 24px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: default;
+  }
+  .element.active {
+    background-color: #22ff22
+  }
+  </style>
+</head>
+<body>
+  <h1>Quicksort (in-place)</h1>
+  <div id="instruction">
+    <ol>
+      <li>Pick a pivot number
+      <li>Repeatedly
+      <ol>
+        <li>Find the next item from the left that is greater than the pivot
+        <li>Find the next item from the right that is less than the pivot
+        <li>Swap them
+        <li>Stop when there are no more items to swap
+      </ol>
+      <li>Repeat this with the left half of the array
+      <li>Repeat this with the right half of the array
+    </ol>
+  </div>
+  <div id="elements"></div>
+  <script src="human-interface.js"></script>
+</body>
