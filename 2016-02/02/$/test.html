@@ -1,0 +1,16 @@
+<!doctype html>
+<head>
+<body>
+  <script src="$.js"></script>
+  <div id="hello">
+    <span class='woo'></span>
+    <span></span>
+    <span class='woo'></span>
+  </div>
+  <script>
+    console.log('#hello', $('#hello'));
+    console.log('span.woo', $('span.woo'));
+    $('#hello').appendChild($('<hello id="amazing"><p><p><p></hello>'));
+    console.log('hello', $('hello'));
+  </script>
+</body>
