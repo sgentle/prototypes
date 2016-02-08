@@ -1,0 +1,19 @@
+{
+  "webhook": {
+    "port": 5555,
+    "ip": "0.0.0.0",
+    "path": "/",
+    "secret": "SEKRIT"
+  },
+  "repodir": "/tmp/repos",
+  "accept_unknown_repos": true,
+  "all_repos": {
+    "pull": "origin/master",
+    "use_short_name": true
+  },
+  "repos": {
+    "sgentle/whenthefuckissydjs": {
+      "after": "echo 'BEES' >> /tmp/lol.txt"
+    }
+  }
+}
