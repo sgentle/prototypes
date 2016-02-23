@@ -1,0 +1,9 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "slouchdb"
+version = "0.1.0"
+
+[dependencies]
+iron = "0.2.6"
+rocksdb = "0.3.0"
+router = "0.1.0"
