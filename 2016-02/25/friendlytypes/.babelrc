@@ -1,0 +1,4 @@
+{
+  "presets": ["stage-2"],
+  "plugins": ["syntax-flow", "transform-flow-strip-types"]
+}
