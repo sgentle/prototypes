@@ -1,0 +1,10 @@
+{
+  "name": "gitvis",
+  "main": "index.html",
+  "dependencies": {
+    "nodegit": "^0.11.9"
+  },
+  "window": {
+    "toolbar": true
+  }
+}
