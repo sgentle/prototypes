@@ -1,0 +1,22 @@
+<!doctype html>
+<head>
+</head>
+<body>
+<div id="toggle">
+  <div>Internet!</div>
+</div>
+<template style="display: none" id="toggle1">
+  <div>Hello!</div>
+</template>
+<template style="display: none" id="toggle2">
+  <div>World!</div>
+</template>
+<button id="toggler">Toggle!</button>
+<script src="toggler.js"></script>
+<script>
+  document.querySelector('#toggler').addEventListener('click',
+    toggler('#toggle', '#toggle1', '#toggle2')
+  );
+</script>
+
+</body>
