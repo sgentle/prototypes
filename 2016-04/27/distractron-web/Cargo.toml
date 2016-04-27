@@ -1,0 +1,11 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "distractron-web"
+version = "0.1.0"
+
+[dependencies]
+atomicwrites = "0.0.14"
+iron = "0.3.0"
+mount = "0.1.0"
+router = "0.1.1"
+staticfile = "0.2.0"

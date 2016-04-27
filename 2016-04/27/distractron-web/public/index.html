@@ -1,0 +1,20 @@
+<!doctype html>
+<head>
+  <title>Distractron</title>
+  <style>
+    body { margin: 0 }
+  </style>
+</head>
+<body>
+  <div id="result"></div>
+  <script>
+    fetch("/distractions")
+      .then(function(result) {
+        return result.json();
+      })
+      .then(function(distractions) {
+        document.getElementById('result').innerHTML = distractions ? "Distractions on" : "Distractions off";
+      })
+    ;
+  </script>
+</body>
