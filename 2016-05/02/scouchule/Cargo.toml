@@ -1,0 +1,10 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "scouchule"
+version = "0.1.0"
+
+[dependencies]
+chrono = "0.2.22"
+hyper = "0.9.1"
+rustc-serialize = "0.3.19"
+url = "1.0.0"
