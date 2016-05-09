@@ -1,0 +1,8 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "whynotsteinberg"
+version = "0.1.0"
+
+[dependencies]
+bmp = "0.1.4"
+image = "0.9.1"
