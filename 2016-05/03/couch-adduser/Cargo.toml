@@ -1,0 +1,10 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "couch-adduser"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.3.0"
+hyper = "0.9.1"
+rand = "0.3.14"
+rustc-serialize = "0.3.19"
