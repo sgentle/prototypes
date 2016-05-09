@@ -1,0 +1,7 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "loopify"
+version = "0.1.0"
+
+[dependencies]
+taglib = "0.2.0"
