@@ -1,0 +1,8 @@
+hash: 447f5bb736db70f123c6714018175e004dc1b3fe8116dfc3c4b80789c818918d
+updated: 2016-05-10T12:35:54.382686807+10:00
+imports:
+- name: golang.org/x/net
+  version: 2a35e686583654a1b89ca79c4ac78cb3d6529ca3
+  subpackages:
+  - html
+devImports: []
