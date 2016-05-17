@@ -1,0 +1,6 @@
+package: .
+import:
+- package: golang.org/x/net
+  subpackages:
+  - html
+- package: gopkg.in/fatih/set.v0

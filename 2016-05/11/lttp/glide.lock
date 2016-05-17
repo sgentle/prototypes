@@ -1,0 +1,11 @@
+hash: 7920e24b6fd6d3f94d7555db5f7491680362b211942e78779c05d0c060e20451
+updated: 2016-05-11T21:58:57.632468385+10:00
+imports:
+- name: golang.org/x/net
+  version: 96dbb961a39ddccf16860cdd355bfa639c497f23
+  subpackages:
+  - html
+  - html/atom
+- name: gopkg.in/fatih/set.v0
+  version: 27c40922c40b43fe04554d8223a402af3ea333f3
+devImports: []
