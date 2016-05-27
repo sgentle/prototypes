@@ -1,0 +1,31 @@
+hash: e1de4702940f3a35edf4f7b5040ea4f57f4a527802b96aeb52394191a7525c4d
+updated: 2016-05-19T20:01:42.474696169+10:00
+imports:
+- name: github.com/andybalholm/cascadia
+  version: 3ad29d1ad1c4f2023e355603324348cf1f4b2d48
+- name: github.com/PuerkitoBio/goquery
+  version: 2e29ea41f0d13f4a303c75553f4eeadddc7a4c56
+- name: golang.org/x/net
+  version: 5916dcb167ed985a5b9e6871fbfd74848a4c170b
+  subpackages:
+  - html
+  - html/atom
+- name: golang.org/x/text
+  version: f773ec03ce334298742df7f3108fc0d402646d22
+  subpackages:
+  - encoding
+  - encoding/charmap
+  - encoding/htmlindex
+  - transform
+  - encoding/internal/identifier
+  - encoding/internal
+  - encoding/japanese
+  - encoding/korean
+  - encoding/simplifiedchinese
+  - encoding/traditionalchinese
+  - encoding/unicode
+  - language
+  - internal/utf8internal
+  - runes
+  - internal/tag
+devImports: []
