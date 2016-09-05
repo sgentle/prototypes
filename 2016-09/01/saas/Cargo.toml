@@ -1,0 +1,9 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "saas"
+version = "0.1.0"
+
+[dependencies]
+hyper = "0.9.10"
+image = "0.10.3"
+num = "0.1.35"
