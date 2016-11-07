@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-https-redirect": "^1.0.0",
+    "geo-tz": "git+https://github.com/sgentle/node-geo-tz.git",
+    "http-auth": "^3.0.1"
+  }
+}
