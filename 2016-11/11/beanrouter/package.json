@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "ble-bean": "^2.1.1"
+  }
+}
