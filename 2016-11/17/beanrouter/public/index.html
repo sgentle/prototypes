@@ -1,0 +1,56 @@
+<!doctype html>
+<head>
+  <title>Magic Beans</title>
+  <style>
+    body { background-color: #222 }
+    div#beancontainer {
+        flex-wrap: wrap;
+        display: flex;
+        max-width: 1000px;
+        justify-content: center;
+        margin: auto;
+        width: 100%;
+        height: 100%;
+        padding: 16px;
+    }
+    .bean {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 12px;
+        padding: 12px;
+        width: 200px;
+        height: 300px;
+        flex: 0 0 200px;
+        /* flex-wrap: wrap; */
+        /* overflow: hidden; */
+        display: flex;
+        flex-direction: column;
+        margin: 4px;
+    }
+
+    .log {
+        padding: 4px;
+        border: 1px inset;
+        overflow-y: scroll;
+        flex: 1 1 auto;
+        border-radius: 8px;
+        background-color: white;
+        font-family: monospace;
+    }
+
+    .data {
+        font-family: monospace;
+        height: 6em;
+        flex: 0 0 auto;
+    }
+
+  </style>
+</head>
+<body>
+  <button id="rescanbutton">Rescan</button>
+  <button id="restartbutton">Restart</button>
+  <div id="beancontainer">
+  </div>
+
+  <script src="client.js"></script>
+</body>
