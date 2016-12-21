@@ -1,0 +1,48 @@
+<!doctype html>
+<head>
+  <title>Bauer</title>
+  <!-- 7segmentstandard font from https://fontlibrary.org/en/font/segment7 -->
+  <link rel="stylesheet" media="screen" href="fonts/stylesheet.css" type="text/css" />
+  <style>
+    body {
+      margin: 0;
+    }
+    #countdown {
+      font-family: 'Segment7Standard';
+      font-size: 38vw;
+      text-align: center;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div id="countdown"></div>
+  <script>
+    var t = document.location.search.slice(1)
+    t = t ? t.split(':') : ['1', '00', '00']
+    var secs = t.reduce(function(total, component) { return total * 60 + (+component) }, 0)
+    var start = Date.now()
+    var countdown = document.getElementById('countdown')
+    countdown.style.fontSize = t.length > 2 ? '24vw' : '38vw'
+    function updateDisplay() {
+      var parts = []
+      var val = Math.round(secs - (Date.now() - start) / 1000)
+      if (val >= 0) {
+        while (val > 0) {
+          parts.unshift(("0" + (val % 60)).slice(-2))
+          val = Math.floor(val / 60)
+        }
+        while (parts.length < t.length) parts.unshift('00')
+        var display = parts.join(':')
+        countdown.textContent = display
+        history.replaceState(null, display, '?'+display)
+        document.title = display
+      }
+      else {
+        countdown.style.opacity = 1 - (countdown.style.opacity || 0)
+      }
+    }
+    updateDisplay()
+    setInterval(updateDisplay, 1000)
+  </script>
+</body>
