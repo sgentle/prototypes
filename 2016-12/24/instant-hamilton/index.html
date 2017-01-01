@@ -1,0 +1,70 @@
+<!doctype html>
+<head>
+  <title>Instant Hamilton</title>
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      box-sizing: border-box;
+      background: black;
+      display: block;
+      width: 200px;
+      height: 200px;
+      padding: 0px;
+      border-radius: 8px;
+    }
+    img {
+      border-radius: inherit;
+    }
+    #back {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <button id="main">
+    <img src="images/01.jpg">
+    <audio preload="auto" src="audio/03.mp3"></audio>
+  </button>
+  <button id="back">
+    <img src="images/02.jpg">
+    <audio preload="auto" src="audio/01.mp3"></audio>
+  </button>
+
+  <script>
+    var next = 2
+    function q(e, s) { return e.querySelector(s) }
+    var main = q(document, '#main')
+    main.addEventListener('click', goNext)
+    var back = q(document, '#back')
+    back.addEventListener('click', goNext)
+    var nextEl = back
+
+    function leftPad(n) { return ("0" + n).slice(-2) }
+    function goNext(ev) {
+      var currentEl = ev.currentTarget
+      var currentAudio = q(currentEl, 'audio')
+      currentAudio.src = 'audio/' + leftPad(next) + '.mp3'
+      currentAudio.load()
+
+      next = next % 3 + 1
+
+      q(currentEl, 'img').src = 'images/' + leftPad(next) + '.jpg'
+
+      currentEl.style.display = 'none'
+      nextEl.style.display = 'block'
+
+      q(nextEl, 'audio').play()
+
+      nextEl = currentEl
+    }
+  </script>
+</body>
