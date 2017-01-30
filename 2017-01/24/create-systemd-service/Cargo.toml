@@ -1,0 +1,9 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "create-systemd-service"
+version = "0.1.0"
+
+[dependencies]
+clap = "2.20.0"
+docopt = "0.7.0"
+rustache = "0.1.0"
