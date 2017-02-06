@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "node-milight-promise": "^0.1.0"
+  }
+}
