@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "color": "^1.0.3",
+    "lazy": "^1.0.11",
+    "node-milight-promise": "^0.1.0"
+  }
+}
