@@ -1,0 +1,8 @@
+[package]
+authors = ["Sam Gentle <sam@samgentle.com>"]
+name = "ecgreceiver"
+version = "0.1.0"
+
+[dependencies]
+serial = "0.4"
+stft = "0.2.0"
